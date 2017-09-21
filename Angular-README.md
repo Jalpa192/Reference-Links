@@ -23,3 +23,6 @@ https://www.youtube.com/watch?v=lncsmB5yfzE
 https://www.youtube.com/watch?v=8VLYjt81-fE
 https://www.softwarearchitekt.at/post/2017/04/06/lazy-loading-with-angular-material-from-ng-conf-2017-in-salt-lake-city.aspx
 https://github.com/manfredsteyer/lazy-loading-ng-conf
+
+## Automatic Progressive Web Apps using the Angular Mobile Toolkit Maxim Salnikov ##
+https://www.youtube.com/watch?v=ecu1vAO23ZM
