@@ -1,0 +1,257 @@
+SDK path: C:\Program Files(x86)\Android\android-sdk
+
+ionic start angular-firebase blank --type=ionic-angular
+npm install @ionic/app-scripts@latest --save-dev
+npm install angularfire2 --save
+
+https://console.firebase.google.com/?pli=1
+
+Did you try doing a typings install of Firebase❓
+
+npm install typings -g # only if you don't have typings installed globally already
+typings install firebase --save
+
+npm install @ionic-native/core --save
+npm install @ionic-native/geolocation --save
+ionic cordova plugin add corodva-plugin-geolocation
+
+ionic cordova plugin add cordova-plugin-camera
+
+ionic cordova platform remove ios
+ionic cordova platform add ios@3.9.0
+ionic cordova platform add android
+ionic cordova run android
+
+npm install -g ionic@3.8.1
+
+
+$ npm install @ngx-translate/core --save 
+$ npm install @ngx-translate/http-loader --save
+npm install @ngx-translate/http-loader --save
+
+google map - api key: AIzaSyB6_AqX4V247t3h1CQhqAovffh2zFhRU54
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB6_AqX4V247t3h1CQhqAovffh2zFhRU54&callback=initMap" type="text/javascript"></script>
+
+ionic plugin add cordova-plugin-googlemaps --variable API_KEY_FOR_ANDROID="YOUR_ANDROID_API_KEY_IS_HERE" --variable API_KEY_FOR_IOS="YOUR_IOS_API_KEY_IS_HERE"
+
+https://www.joshmorony.com/using-cordova-plugins-in-ionic-2-with-ionic-native/
+https://www.joshmorony.com/ionic-2-how-to-use-google-maps-geolocation-video-tutorial/
+https://www.joshmorony.com/integrating-native-google-maps-into-an-ionic-2-application/
+https://www.joshmorony.com/building-a-crud-ionic-2-application-with-firebase-angularfire/
+https://www.joshmorony.com/a-guide-to-styling-an-ionic-2-application/
+https://www.joshmorony.com/getting-familiar-with-local-notifications-in-ionic-2/
+https://ionicframework.com/docs/native/
+https://www.joshmorony.com/automatically-generate-splash-screens-and-icons-with-ionic-cli/
+https://github.com/ionicthemes/internationalize-and-localize-your-ionic2-app
+https://ionicthemes.com/tutorials/about/best-ionic2-tutorials
+https://www.npmjs.com/package/angular2-infinite-scroll
+https://ionicframework.com/docs/native/diagnostic/
+https://code.tutsplus.com/tutorials/how-to-create-a-camera-app-with-ionic-2--cms-28205
+http://ngcordova.com/docs/plugins/camera/
+https://coursetro.com/posts/code/25/Understanding-Angular-2-Animations-Tutorial
+https://github.com/angular/angularfire2/issues/473
+https://www.npmjs.com/package/@ngx-translate/http-loader
+
+https://www.mkyong.com/java/how-to-set-java_home-on-windows-10/
+https://docs.oracle.com/cd/E60665_01/salescs_gs/OSDMA/bizcard-uc-setup002.htm#OSDMA6713
+https://stackoverflow.com/questions/31190355/ionic-build-android-error-no-installed-build-tools-found-please-install-the
+https://services.gradle.org/distributions/gradle-3.3-all.zip
+
+https://docs.ionic.io/services/push/
+http://tphangout.com/ionic-2-push-notifications-with-firebase/
+https://ampersandacademy.com/tutorials/ionic-framework-version-2/push-notification-in-ionic-2-native-plugin-version-2-3-with-firebase-hosting-service-provider
+https://ampersandacademy.com/tutorials/ionic-framework-version-2/push-notification-using-google-firebase
+https://www.androidhive.info/2012/10/android-push-notifications-using-google-cloud-messaging-gcm-php-and-mysql/
+https://stackoverflow.com/questions/38873523/how-to-send-notification-from-c-sharp-console-application
+
+http://tphangout.com/chat-app-with-ionic-3-and-firebase-ep-1-sign-in-tabs/
+http://tphangout.com/chat-app-with-ionic-3-firebase-ep-2-sign-up/
+http://tphangout.com/chat-app-with-ionic-3-firebase-ep-3-profile-pic-password-reset/
+http://tphangout.com/chat-app-with-ionic-3-firebase-ep-4-profile-tab/
+http://tphangout.com/chat-app-with-ionic-3-firebase-ep-4-adding-friends/
+http://tphangout.com/chat-app-with-ionic-3-firebase-ep-6-sending-requests/
+http://tphangout.com/chat-app-with-ionic-3-firebase-ep-7-accepting-and-ignoring-requests/
+http://tphangout.com/chat-app-with-ionic-3-firebase-ep-8-one2one-chat/
+
+
+ionic cordova plugin add de.appplant.cordova.plugin.local-notification
+npm install --save @ionic-native/local-notifications
+npm install moment --save
+
+ionic plugin add cordova-plugin-camera
+
+cordova plugin remove cordova-plugin-compat --force  
+cordova plugin add cordova-plugin-compat@1.1.0  
+
+ionic plugin add cordova-plugin-fcm
+
+ionic cordova plugin add cordova-plugin-filepath
+ionic cordova plugin add cordova-plugin-filechooser
+ionic cordova plugin add cordova-plugin-file
+npm install @ionic-native/file @ionic-native/file-chooser @ionic-native/file-path --save
+
+ionic cordova platform add android
+ionic cordova emulate android
+
+ionic cordova build android --prod --release
+
+-- push notification--
+cordova plugin add cordova-plugin-fcm
+
+
+android list sdk --all
+android update sdk -u -a -t 19
+android update sdk -u -a -t 20
+
+
+ANDROID_HOME=\\DSK-1085\android-sdk-windows
+JAVA_HOME=C:\Program Files\java\jdk1.8.0_111
+GRADLE_HOME -> C:\gradle\gradle-4.1\
+path -> C:\gradle\gradle-4.1\bin
+path -> C:\Program Files\java\jdk1.8.0_111\bin
+path -> \\DSK-1085\android-sdk-windows\tools
+path -> \\DSK-1085\android-sdk-windows\platform-tools
+
+
+
+http://ionicons.com/cheatsheet.html
+https://www.tutorialspoint.com/ionic/ionic_icons.htm
+
+No target specified and no devices found, deploying to emulator
+Error: No emulator images (avds) found.
+1. Download desired System Image by running: "\\DSK-1085\android-sdk-windows\tools\android.bat" sdk
+2. Create an AVD by running: "\\DSK-1085\android-sdk-windows\tools\android.bat" avd
+HINT: For a faster emulator, use an Intel System Image and install the HAXM device driver
+
+A problem occurred configuring root project 'android'.
+> Could not resolve all dependencies for configuration ':_debugApkCopy'.
+   > Could not find com.google.firebase:firebase-messaging:11.0.1.
+     Required by:
+         project :
+   > Could not find com.google.firebase:firebase-core:11.0.1.
+     Required by:
+         project :
+
+ionic cordova plugin add phonegap-plugin-push@1.9.2 --variable SENDER_ID=213884006314
+ionic cordova plugin remove phonegap-plugin-push --variable SENDER_ID=213884006314
+ionic cordova plugin add phonegap-plugin-push --variable SENDER_ID=213884006314
+npm install @ionic-native/push --save
+
+npm install promise-polyfill --save-exact
+
+https://youtu.be/EvV9Vk9iOCQ
+https://angularfirebase.com/lessons/send-push-notifications-in-angular-with-firebase-cloud-messaging/
+https://www.youtube.com/watch?v=7yXtzhqT1uk
+https://angularfirebase.com/lessons/send-push-notifications-in-angular-with-firebase-cloud-messaging/#1-Get-Permission-from-the-User
+https://github.com/fechanique/cordova-plugin-fcm
+http://simonwillshire.com/blog/Ionic-2-FCM-Notifications/
+https://medium.com/@shayan.ta69/how-to-handle-fcm-notification-in-backgrounded-android-applications-29229c4f9975
+
+https://www.youtube.com/watch?v=oPCiDtzUcTo#t=4.151305
+
+https://gist.github.com/jirawatee/85d4b46a89b9ae821b63c31f5d5189de
+
+debuggeing
+https://www.youtube.com/watch?v=nCWCGS5hurY
+https://www.youtube.com/watch?v=9J8AxhDxtTE&feature=youtu.be
+
+
+https://stackoverflow.com/questions/37412963/send-push-to-android-by-c-sharp-using-fcm-firebase-cloud-messaging
+
+// network connection check 
+https://www.thepolyglotdeveloper.com/2016/01/determine-network-availability-in-an-ionic-2-mobile-app/
+
+ionic cordova plugin add cordova-plugin-network-information
+npm install --save @ionic-native/network
+
+// reusable component
+https://stackoverflow.com/questions/40878842/making-a-reusable-angular2-component-that-can-be-used-anywhere-on-the-a-site
+
+http://blog.ionic.io/building-an-ionic-app-with-offline-support-part-1/
+http://blog.ionic.io/building-an-ionic-app-with-offline-support-part-2/
+
+
+https://medium.com/beautiful-angular/show-loader-on-every-request-in-angular-2-9a0fca86afef
+https://alligator.io/ionic/loading-controller-ionic/
+https://www.techiediaries.com/ionic2/how-to-display-a-loading-indicator-spinner-in-ionic2-apps-using-loading-controller/
+https://www.joshmorony.com/tips-tricks-for-styling-ionic-2-applications/
+
+https://www.pluralsight.com/courses/ionic2-angular2-typescript-mobile-apps
+https://forum.ionicframework.com/t/after-splash-screen-display-white-screen-long-time/80162/16
+
+// for 
+https://github.com/ionic-team/ionic/tree/master/src/components
+
+// image upload
+https://devdactic.com/ionic-2-images/
+http://www.c-sharpcorner.com/article/angular-2-file-upload-using-web-api/
+https://stackoverflow.com/questions/27562343/posting-form-data-and-a-file-to-asp-net-web-api
+MultipartDataMediaFormatter
+
+npm install --save @ionic-native/camera @ionic-native/file @ionic-native/file-path @ionic-native/transfer
+ionic cordova plugin add cordova-plugin-camera --save
+ionic cordova plugin add cordova-plugin-file --save
+ionic cordova plugin add cordova-plugin-file-transfer --save
+ionic cordova plugin add cordova-plugin-filepath --save
+
+
+https://www.youtube.com/watch?v=e8ZdX6HcDyg
+https://www.pluralsight.com/guides/front-end-javascript/using-cordova-inappbrowser-plugin-with-ionic-2+-to-open-urls
+
+// page pul down refersh
+https://ionicframework.com/docs/api/components/refresher/Refresher/
+
+// encryption
+https://github.com/Uisli21/SecureAngularLogin
+npm install crypto-js
+
+How do i publish an updated version of my existing ionic app on google play store?
+https://stackoverflow.com/questions/42290083/how-do-i-publish-an-updated-version-of-my-existing-ionic-app-on-google-play-stor	
+
+Guide: How to update to Ionic 3.X
+https://forum.ionicframework.com/t/guide-how-to-update-to-ionic-3-x/87516/13
+
+// read sms
+https://github.com/floatinghotpot/cordova-plugin-sms/blob/master/docs/README.md
+
+// sqlite db
+https://github.com/litehelpers/Cordova-sqlite-storage#sample
+https://ionicframework.com/docs/native/sqlite/
+https://github.com/litehelpers/Cordova-sqlite-storage
+https://ampersandacademy.com/tutorials/ionic-framework-version-2/sqlite-native-plugin-example
+
+//photo library
+https://github.com/terikon/cordova-plugin-photo-library
+
+// calender 
+https://www.raymondcamden.com/2015/09/18/integrating-the-calendar-into-your-ionic-app
+https://www.techiediaries.com/ionic-cordova-native-calendar/
+
+// file listing
+https://stackoverflow.com/questions/41396525/how-to-get-audio-files-on-my-phone-using-ionic-2-cordova-plugins
+http://www.erikschierboom.com/2016/09/02/ionic2-audio-recorder/
+
+http://ngcordova.com/docs/plugins/file/
+
+// custome calender layout
+https://thielcole.github.io/ionic2/2017/02/03/Ionic2-Calendar.html
+https://github.com/twinssbc/Ionic2-Calendar
+
+//app publish to store
+// https://gonehybrid.com/build-your-first-mobile-app-with-ionic-2-angular-2-part-7/
+
+// angualr ng-template
+https://blog.angular-university.io/angular-ng-template-ng-container-ngtemplateoutlet/
+https://stackoverflow.com/questions/45112717/angular-4-dynamic-template-with-interpolation
+// collasable component
+http://www.fabiobiondi.com/blog/2016/03/a-collapsable-panel-component-in-angular-2-and-angular-1-5/
+
+//print in ionic 2
+https://www.techiediaries.com/mobiledev/how-to-print-with-ionic2-and-cordova/
+https://ionicframework.com/docs/native/printer/
+https://github.com/katzer/cordova-plugin-printer
+
+// ionic project in visual studio
+https://www.youtube.com/watch?v=7IIoOi342vI
+https://taco.visualstudio.com/en-us/docs/tutorial-ionic2/
+http://taco.visualstudio.com/en-us/docs/tutorial-ionic2/#creating-an-ionic-project-in-visual-studio 
