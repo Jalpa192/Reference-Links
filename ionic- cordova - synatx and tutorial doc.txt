@@ -1,3 +1,5 @@
+angualar 2: npm install --save @types/underscore
+
 SDK path: C:\Program Files(x86)\Android\android-sdk
 
 ionic start angular-firebase blank --type=ionic-angular
@@ -255,3 +257,25 @@ https://github.com/katzer/cordova-plugin-printer
 https://www.youtube.com/watch?v=7IIoOi342vI
 https://taco.visualstudio.com/en-us/docs/tutorial-ionic2/
 http://taco.visualstudio.com/en-us/docs/tutorial-ionic2/#creating-an-ionic-project-in-visual-studio 
+
+//Protecting Your App With Ionic Auth Guards
+https://www.youtube.com/watch?time_continue=53&v=ugIhBC8tsQE
+https://www.raymondcamden.com/2016/11/04/an-example-of-the-ionic-auth-service-with-ionic-2
+
+// angualr 2 file upload progress bar
+https://stackoverflow.com/questions/42231123/how-to-use-angular2-http-api-for-tracking-upload-download-progress
+https://angular.io/guide/http#listening-to-progress-events
+https://angular.io/guide/http
+https://alligator.io/angular/httpclient-intro/
+http://www.c-sharpcorner.com/article/angular-2-file-upload-using-web-api/
+
+https://alligator.io/angular/angular-material-2/
+
+// set interval and set time out function
+https://stackoverflow.com/questions/42299528/using-setinterval-function-inside-angular-2-component
+
+https://stackoverflow.com/questions/44178141/connect-vs-code-with-tfs-on-mac
+https://www.infragistics.com/community/blogs/stevez/archive/2013/01/28/how-to-use-tfs-on-a-mac.aspx
+https://marketplace.visualstudio.com/items?itemName=ms-vsts.team
+
+http://pointdeveloper.com/how-to-build-ionic-app-with-phonegap-build/
