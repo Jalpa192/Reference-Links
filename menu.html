@@ -1,0 +1,129 @@
+### menu html
+ <div class='swanky_wrapper'>
+     <label for='Dashboard'>
+        <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/dash.png'>
+        <span>Dashboard</span>
+        <div class='lil_arrow'></div>
+        <div class='bar'></div>
+        <div class='swanky_wrapper__content'>
+          <ul>
+            <li>Tools</li>
+            <li>Reports</li>
+            <li>Analytics</li>
+            <li>Code Blocks</li>
+          </ul>
+        </div>
+      </label>
+       <label for='Sales'>
+        <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/del.png'>
+        <span>Sales</span>
+        <div class='lil_arrow'></div>
+        <div class='bar'></div>
+        <div class='swanky_wrapper__content'>
+          <ul>
+            <li>New Sales</li>
+            <li>Expired Sales</li>
+            <li>Sales Reports</li>
+            <li>Deliveries</li>
+          </ul>
+        </div>
+      </label>
+    </div>
+ 
+ #### css
+ .menu-content{
+        background-color: #293649;
+        color: #ffffff; 
+    
+    .swanky{
+      &_wrapper{
+        // width: 225px;
+        //transform: rotateY(14deg) rotateX(-2deg) rotateZ(-2deg);
+        height: auto;
+        overflow: hidden;
+        border-radius: 4px;
+        background: #2a394f;
+        label{
+          padding:25px;
+          float:left;
+          height:72px;
+          border-bottom: 1px solid #293649;
+          position:relative;
+          width:100%;
+          color:rgb(239, 244, 250);
+          transition:text-indent .15s, height .3s;
+          box-sizing:border-box;
+          img{
+            margin-right:10px;
+            position:relative;
+            top: 2px;
+            width:16px;
+          }
+          span{
+            position :relative;
+            top:-3px
+          }
+          &:hover{
+            background: rgb(33, 46, 65);
+            border-bottom: 1px solid #2A394F;
+            text-indent:4px;
+          }
+          &:hover .bar{
+            width:100%;
+          }
+          .bar{
+            width: 0px;
+            transition:width .15s;
+            height: 2px;
+            position: absolute;
+            display: block;
+            background: rgb(53, 87, 137);
+            bottom: 0;
+            left: 0;
+          }
+          .lil_arrow{
+            width:5px;
+            height:5px;
+            -webkit-transition: transform 0.8s;
+            transition: transform 0.8s;
+            -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            border-top:2px solid white;
+            border-right:2px solid white;
+            float:right;
+            position:relative;
+            top: 6px;
+            right: 2px;
+            transform:rotate(45deg)
+          }
+        }
+        &__content{
+          position: absolute;
+          display: none;
+          overflow: hidden;
+          left: 0;
+          width: 100%;
+          li{
+            width:100%;
+            opacity:0;
+            left:-100%;
+            background: #15a4fa;
+            padding:25px 0px;
+            text-indent:25px;
+            box-shadow: 0px 0px #126CA1  inset;
+              transition:box-shadow .3s,text-indent .3s;
+            position:relative;
+            &:hover{
+              background:#0c93e4;
+              box-shadow: 3px 0px #126CA1  inset;
+              transition:box-shadow .3s linear,text-indent .3s linear;
+              text-indent:31px;
+  
+            }
+          }
+          .clear{
+            clear:both;
+          }
+        }
+      }
+    }
+  }
