@@ -41,3 +41,6 @@
 6. http://tphangout.com/chat-app-with-ionic-3-firebase-ep-6-sending-requests/
 7. http://tphangout.com/chat-app-with-ionic-3-firebase-ep-7-accepting-and-ignoring-requests/
 8. http://tphangout.com/chat-app-with-ionic-3-firebase-ep-8-one2one-chat/
+
+## cordova issues
+1.https://forums.adobe.com/thread/2411286
