@@ -1,0 +1,190 @@
+page-login2 {
+    // Main Colors
+    $accent: null;
+    $white: #ffffff;
+    $black: #000000;
+    $dark-gray: lighten($black, 20%);
+    $gray: lighten($black, 40%);
+    $light-gray: lighten($black, 60%);
+    $lighter-gray: lighten($black, 80%);
+    $primary: #363636;
+    $accent: #ed2553;
+    $max-width: 460px;
+
+    // Mixins
+    $level: 1;
+    
+    @mixin materialShadow($level) {
+      @if $level == 1 {
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+      }
+    
+      @else if $level == 2 {
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+      }
+    
+      @else if $level == 3 {
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+      }
+    
+      @else if $level == 4 {
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+      }
+    
+      @else if $level == 5 {
+        box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+      }
+    }
+
+    background: #e9e9e9;
+    color: $gray;
+    font-family: 'RobotoDraft', 'Roboto', sans-serif;
+    font-size: 14px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    .container {
+        position: relative;
+        max-width: $max-width;
+        width: 100%;
+        margin: 10% 0% 0% 0%;
+
+    }
+/* Card */
+.card {
+    position: relative;
+    background: $white;
+    border-radius: 5px;
+    padding: 60px 0 40px 0;
+    box-sizing: border-box;
+    @include materialShadow(2);
+    transition: .3s ease;
+  
+    &:first-child {
+      background: darken($white, 2%);
+      height: 10px;
+      border-radius: 5px 5px 0 0;
+      margin: 0 10px;
+      padding: 0;
+    }
+  
+    /* Title */
+    .title {
+      position: relative;
+      z-index: 1;
+      border-left: 5px solid $accent;
+      margin: 0 0 35px;
+      padding: 10px 0 10px 50px;
+      color: $accent;
+      font-size: 32px;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+
+    .lblcard {
+        color: #757575;
+        font-size: 24px;
+        font-weight: 300;
+        line-height: 40px;
+      }
+
+    }
+
+      /* Button */
+      .button-container {
+        margin: 30px 10px;
+        text-align: center;
+        display: flex;
+        justify-content: space-around;
+    
+        button {
+          outline: 0;
+          cursor: pointer;
+          position: relative;
+          display: inline-block;
+          background: 0;
+          width: 230px;
+          border: 2px solid #e3e3e3;
+          padding: 20px 0;
+          margin: 0px 5px;
+          font-size: 24px;
+          font-weight: 600;
+          line-height: 1;
+          text-transform: uppercase;
+          overflow: hidden;
+          transition: .3s ease;
+    
+          span {
+            position: relative;
+            z-index: 1;
+            color: #ddd;
+            transition: .3s ease;
+          }
+    
+          &:before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            display: block;
+            background: $accent;
+            width: 30px;
+            height: 30px;
+            border-radius: 100%;
+            margin: -15px 0 0 -15px;
+            opacity: 0;
+            transition: .3s ease;
+          }
+    
+          &:hover,
+          &:active,
+          &:focus {
+            border-color: $accent;
+    
+            span {
+              color: $accent;
+            }
+          }
+    
+          &:active,
+          &:focus {
+            span {
+              color: $white;
+            }
+    
+            &:before {
+              opacity: 1;
+              @include transform(scale(10));
+            }
+          }
+        }
+      }
+    
+      /* Footer */
+      .footer {
+        margin: 40px 0 0;
+        color: #d3d3d3;
+        font-size: 24px;
+        font-weight: 300;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    
+        a {
+          color: inherit;
+          text-decoration: none;
+          transition: .3s ease;
+    
+          &:hover {
+            color: darken(#d3d3d3, 10%);
+          }
+        }
+        .block{
+            width:100%;
+            margin-bottom: 5px;
+        }
+      }
+
+}
+
+
