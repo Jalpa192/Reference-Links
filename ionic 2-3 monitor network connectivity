@@ -1,0 +1,36 @@
+https://ionicframework.com/docs/native/network/
+
+- ionic cordova plugin add cordova-plugin-network-information
+- npm install --save @ionic-native/network
+
+
+constructor(private platform: Platform, private network: Network, private alertCtrl: AlertController)
+
+monitorNetworkActivity(){
+    if(this.platform.is("cordova")){
+
+      // watch network for a connection
+        this.connectSubscription = this.network.onConnect().subscribe(() => {
+          console.log('network connected!');
+          this.alertMessage("Network ", "Connected");
+          
+          setTimeout(() => {
+            if (this.network.type === 'wifi') {
+              console.log('we got a wifi connection, woohoo!');
+              this.alertMessage("Network ", "Connected To wifi network");
+            }else{
+              this.alertMessage("Network ", "Other network connection");
+            }
+          }, 3000);
+        });
+
+        this.disconnectSubscription = this.network.onDisconnect().subscribe(() => {
+          console.log('network was disconnected :-(');
+          this.alertMessage("Network ", "Internet Connection Lost");
+        });
+    }
+  }
+
+  alertMessage(title, Message){
+    this.alertCtrl.create({title:title, message: Message,buttons:["dismiss"]}).present();
+  }
