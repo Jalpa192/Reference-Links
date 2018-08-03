@@ -1,0 +1,32 @@
+Angular 4 - Http Request - C# Api
+
+
+Global.asax
+
+protected void Application_BeginRequest()
+{
+                if (HttpContext.Current.Request.HttpMethod == "OPTIONS")
+                {
+                                //These headers are handling the "pre-flight" OPTIONS call sent by the browser
+                                HttpContext.Current.Response.AddHeader("Access-Control-Allow-Methods", "GET,POST, OPTIONS");
+                                HttpContext.Current.Response.AddHeader("Access-Control-Allow-Headers", "Content-Type, Accept,Authorization");
+                                HttpContext.Current.Response.AddHeader("Access-Control-Max-Age", "1728000");
+                                HttpContext.Current.Response.End();
+                }
+}
+----------------                       
+Web.config
+
+<system.webServer>
+<validation validateIntegratedModeConfiguration="false"/>
+<!--<modules runAllManagedModulesForAllRequests="true">
+<add name="HandleOptions" type="QXASNewCRM_WebAPI.OptionsModule" />
+</modules>-->
+<httpProtocol>
+<customHeaders>
+<add name="Access-Control-Allow-Origin" value="*" />
+<add name="Access-Control-Allow-Headers" value="*" />
+<add name="Access-Control-Allow-Methods" value="POST,GET,OPTIONS,PUT,DELETE"/>
+</customHeaders>
+</httpProtocol>
+</system.webServer>
